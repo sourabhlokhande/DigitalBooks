@@ -1,0 +1,127 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Reader/getbook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "GET",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7176
+        }
+      ],
+      "UpstreamPathTemplate": "/books/getbooks",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reader/searchbookbypaymentid",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7176
+        }
+      ],
+      "UpstreamPathTemplate": "/books/searchbookbypaymentid",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reader/buybook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7176
+        }
+      ],
+      "UpstreamPathTemplate": "/books/buybook",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reader/searchbook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7176
+        }
+      ],
+      "UpstreamPathTemplate": "/books/searchbook",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Author/addbook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7037
+        }
+      ],
+      "UpstreamPathTemplate": "/author/addbook",
+      "UpstreamHttpMethod": [ "Post" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "GatewayAuthenticationKey",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+      "DownstreamPathTemplate": "/api/Author/adduser",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7037
+        }
+      ],
+      "UpstreamPathTemplate": "/author/adduser",
+      "UpstreamHttpMethod": [ "Post" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "GatewayAuthenticationKey",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+      "DownstreamPathTemplate": "/api/Author/updatebook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "PUT",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7037
+        }
+      ],
+      "UpstreamPathTemplate": "/author/updatebook",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Auth/Validate",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7130
+        }
+      ],
+      "UpstreamPathTemplate": "/author/validate",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7068"
+  }
+}
